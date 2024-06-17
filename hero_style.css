@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 1.1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -214,13 +217,6 @@ ul.menu li.menu__items{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #02302c;
-    /* background-image: linear-gradient(
-        rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%
-    ), url('consult_img/hero_1.jpg');
-    background-position: center right;
-    background-repeat: none;
-    background-size: cover;
-    border-radius: 8px; */
 
     /*transition*/
     transition: all 30s ease-out;
@@ -237,7 +233,7 @@ ul.menu li.menu__items{
 
 /*hero bg image animation*/
 @keyframes change_bg_img{
-    from{
+    0%{
         background-image: linear-gradient(
         rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%
         ), url('consult_img/hero_1.jpg');
@@ -246,7 +242,7 @@ ul.menu li.menu__items{
         background-size: cover;
         border-radius: 8px;
     }
-    to{
+    100%{
         background-image: linear-gradient(
         rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%
         ), url('consult_img/hero_2.jpg');
@@ -278,29 +274,11 @@ ul.menu li.menu__items{
     font-style: normal;
     text-transform: capitalize;
     text-align: justify;
-
-    /* animation */
-    animation-name: move_h1;
-    animation-duration: 1200ms;
-    animation-fill-mode: forwards;
-    animation-delay: 250ms;
-    opacity: 0;
 }
 .hero__content h1{
     line-height: 80px;
     word-spacing: -15.8px;
 }
-
-/* h1 animation */
-@keyframes move_h1 {
-    from{
-        transform: translateX(-500px);
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}   
 
 .hero__content h2 {
     color: #fff;
@@ -339,13 +317,6 @@ ul.menu li.menu__items{
     cursor: pointer;
     transition: .5s ease-out;
     display: inline-block;
-
-    /* animation  */
-    animation-name: move_hero_btn;
-    animation-duration: 1200ms;
-    animation-fill-mode: forwards;
-    animation-delay: 700ms;
-    opacity: 0;
 }
 
 .hero__content button span{
@@ -369,15 +340,6 @@ ul.menu li.menu__items{
 .hero__content button:hover span::after{
     opacity: 1;
     right: 0px;
-}
-@keyframes move_hero_btn {
-    from{
-        transform: translateX(-500px);
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
 }
 
 /* responsive hero section */

@@ -218,34 +218,57 @@ ul.menu li.menu__items{
     grid-template-columns: 1fr 1fr;
     background-color: #02302c;
 
-    /*transition*/
+    background: linear-gradient(
+        to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%
+    ),
+    url('consult_img/hero_1.jpg');
+    background-position: center right;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 8px;
+
+    /* transition
     transition: all 30s ease-out;
-    mix-blend-mode: luminosity;
+    mix-blend-mode: luminosity; */
 
 
     /** animation**/
-    animation-name: change_bg_img;
-    animation-duration: 12s;
-    /* animation-delay: .3s; */
-    animation-iteration-count: infinite;
-    
+    animation: change_bg_img 50s 0.5s infinite;
 }
 
 /*hero bg image animation*/
 @keyframes change_bg_img{
-    0%{
-        background-image: linear-gradient(
-        rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%
-        ), url('consult_img/hero_1.jpg');
+
+    35%{
+        background: url('consult_img/hero_2.jpg');
+        background-position: center right;
+        background-repeat: none;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    40%{
+        background: url('consult_img/hero_4.jpg');
+        background-position: center right;
+        background-repeat: none;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    60%{
+        background:url('consult_img/hero_5.jpg');
+        background-position: center right;
+        background-repeat: none;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    80%{
+        background: url('consult_img/hero_6.jpg');
         background-position: center right;
         background-repeat: none;
         background-size: cover;
         border-radius: 8px;
     }
     100%{
-        background-image: linear-gradient(
-        rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%
-        ), url('consult_img/hero_2.jpg');
+        background: url('consult_img/hero_7.jpg');
         background-position: center right;
         background-repeat: none;
         background-size: cover;

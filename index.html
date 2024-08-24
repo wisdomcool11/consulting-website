@@ -58,7 +58,7 @@
 
     <main>
         <!--hero section-->
-        <div class="hero">
+        <section class="hero">
             <div class="hero__wrap">
 
                 <div class="hero__content">
@@ -99,12 +99,12 @@
                 </div>
             </div>
 
-        </div><!-- end of hero section-->
+        </section><!-- end of hero section-->
         <!--
             home about us
             short about us 
         -->
-        <div class="about__n__service">
+        <section class="about__n__service">
 
             <div class="about__us__wrap">
                 <div class="about__content">
@@ -194,9 +194,9 @@
                     </div>
                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section__2">
+        <section class="section__2">
 
             <div class="marketing">
                 <div class="marketing__img">
@@ -255,9 +255,9 @@
             </div>
 
             <div class="marketing">
-                <div class="marketing__img">
+                <div class="marketing__img" id="shift_left">
                     <img src="consult_img/img_5.jpg" alt="people brain storming" class="market__img market__img-up">
-                    <img src="consult_img/img_6.jpg" alt="people brain storming" class="market__img market__img-down">
+                    <img src="consult_img/img_6.jpg" id="shift_left_img" alt="people brain storming" class="market__img market__img-down">
                 </div>
 
                 <div class="marketing__context">
@@ -309,11 +309,15 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div class="section__3">
+        <section class="section__3">
             <div class="design">
-                <div class="design__img"></div>
+                <video autoplay muted loop plays-inline class="bg__clip">
+                    <source src="/consult_img/design_vid.mp4" type="video/mp4">
+                    
+                </video>
+
                 <div class="design__context">
                     <h4>
                         GROW BUSINESS <hr>
@@ -332,11 +336,13 @@
                         <button class="design__btn">Contact Us</button>
                     </a>
                 </div>
-            </div>
-        </div>
 
-        <div class="section__4">
+            </div>
+        </section>
+
+        <section class="section__4">
             <div class="section__4--float">
+
                <div class="sect__4__float_01">
                  <!-- this will float about the page -->
                     <div class="float__box">
@@ -347,6 +353,7 @@
                             <p>Years Of Experiences</p>
                         </div>
                     </div>
+
                     <div class="float__box">
                         <!-- float box card -->
                         <img src="consult_img/float__img/register.png" alt="galaxy img" class="float_img">
@@ -356,6 +363,7 @@
                         </div>
                     </div>
                </div>
+
                 <div class="sect__4__float_01">
                     <div class="float__box">
                         <!-- float box card -->
@@ -464,7 +472,18 @@
                 </div>
 
             </div>
-        </div>
+        </section>
+
+        <section class="section__5">
+            <!-- pricing -->
+            <div class="section__5-content">
+                <h4>Our Pricing Table</h4>
+                <h3>Choose Pricing Packages</h3>
+                <hr><!--drawing line across-->
+            </div>
+        </section>
+
+
     </main>
 
     <script src="app.js"></script>
